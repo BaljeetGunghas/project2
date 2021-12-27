@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        .navbar {
+            width: 100vw;
+            height: 5rem;
+            background-color: rgb(167 87 105);
+            display: flex;
+            overflow: hidden;
+
+        }
+
+        div.logo {
+            padding: 1rem;
+            position: absolute;
+        }
+
+        .img h2 {
+            height: 0rem;
+            width: 11rem;
+            color: #fff;
+        }
+
+        .navbar ul {
+            overflow: auto;
+            margin-left: 40rem;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 1rem;
+        }
+
+        .navbar li a {
+            font-size: 2rem;
+            text-decoration: none;
+            color: #fff;
+            text-transform: capitalize;
+            padding: 1rem;
+        }
+
+        .navbar li a:hover {
+            color: rgba(0, 0, 255, 0.623);
+            background-color: rgba(235, 234, 231, 0.876);
+            border-radius: 1rem;
+            padding-top: .3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <div class="img">
+                {{!-- <img
+                    src="https://images.unsplash.com/photo-1521058001910-55b77aba2203?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1467&q=80"
+                    alt="logo" srcset="logo"> --}}
+                <h2>AWESOME it</h2>
+            </div>
+        </div>
+        <div class="links">
+            <ul>
+                <li><a href="/">home</a></li>
+                <li><a href="/reagistor">register</a></li>
+                <li><a href="/sine">sine in</a></li>
+                <li><a href="/logout">log out</a></li>
+                
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

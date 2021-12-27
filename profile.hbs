@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile of user</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Monoton&display=swap');
+
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        .navbar {
+            width: 100vw;
+            height: 5rem;
+            background-color: rgb(167 87 105);
+            display: flex;
+            overflow: hidden;
+
+        }
+
+        div.logo {
+            padding: 1rem;
+            position: absolute;
+        }
+
+        .img h2,
+        .img p {
+            height: 0rem;
+            width: 11rem;
+            color: #fff;
+        }
+
+        .navbar ul {
+            overflow: auto;
+            margin-left: 40rem;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 1rem;
+        }
+
+        .navbar li a {
+            font-size: 2rem;
+            text-decoration: none;
+            color: #fff;
+            text-transform: capitalize;
+            padding: 1rem;
+        }
+
+
+
+
+        .background {
+            background: url("https://images.unsplash.com/photo-1640113934744-98014adb0591?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 90vh;
+            width: 100vw;
+            display: grid;
+            place-items: center;
+        }
+
+        .heading {
+            font-size: 2rem;
+            color: white;
+            position: absolute;
+            top: 4rem;
+            margin: 2rem;
+            text-transform: capitalize;
+            font-family: 'Monoton', cursive;
+            word-spacing: 2rem;
+        }
+
+        .center-p {
+            height: auto;
+            width: auto;
+            border: .001rem solid white;
+            border-radius: 4rem;
+            top: 25%;
+            position: absolute;
+            left: 12%;
+            display: flex;
+            padding: 2rem;
+        }
+
+        .center-p img {
+            height: 15rem;
+            width: 15ewm;
+            border-radius: 50%;
+        }
+
+        .center-p .details {
+            display: flex;
+            margin: 4rem;
+            flex-direction: column;
+        }
+
+        .center-p .details h2,
+        .center-p .details p {
+            font-size: 3rem;
+            text-transform: capitalize;
+            padding: 2rem;
+            color: white;
+        }
+
+        .frame {
+            display: flex;
+        }
+
+        .frame h3 {
+            position: absolute;
+            bottom: .7rem;
+            left: 32rem;
+            font-size: 3rem;
+            text-transform: capitalize;
+            padding: 2rem;
+            color: white;
+        }
+
+        .frame h4 {
+            position: absolute;
+            bottom: .7rem;
+            left: 40rem;
+            font-size: 3rem;
+            text-transform: capitalize;
+            padding: 2rem;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    {{>navbar_logout}}
+    <div class="background">
+        <div class="heading">
+            <h1>thanks for log in </h1>
+        </div>
+        <div class="center-p">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQB9HZzNjwK62BVEEvSWHDzZdIQHcsu8qoaxj1ochXZuZkqgfdz6txVvaNmkz_OAY6kOE&usqp=CAU"
+                alt="user">
+            <div class="details">
+                <div class="frame">
+                    <h2>name :</h2>
+                    <p id="full_name">baljeet singh</p>
+                </div>
+                <div class="frame">
+                    <h2>mobile :</h2>
+                    <p id="mobile">8685007017</p>
+                </div>
+                <div class="frame">
+                    <h2>email :</h2>
+                    <p id="email">baljeetgunghas5@gmail.com</p>
+                </div>
+                <div class="frame">
+                    <h2>gender :</h2>
+                    <p id="gender">male</p>
+                </div>
+            </div>
+            <div class="frame">
+                <h3>_id :</h3>
+                <h4 id="yourid">
+                    61c7762a2916546d093dcc40</h4>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

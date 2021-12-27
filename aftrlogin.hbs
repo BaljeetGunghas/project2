@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Monoton&display=swap');
+
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Monoton&family=Roboto+Mono:wght@300&display=swap');
+
+        .background {
+            background: url("https://images.unsplash.com/photo-1579021289055-fc2679991a35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 90vh;
+            width: 100vw;
+            display: grid;
+            place-items: center;
+        }
+
+        .heading h1 {
+            font-size: 4rem;
+            color: rgb(2, 1, 1);
+            position: absolute;
+            top: -2rem;
+            right: 3rem;
+            margin: 3rem;
+            text-transform: capitalize;
+            font-family: 'Monoton', cursive;
+            word-spacing: 2rem;
+
+
+        }
+
+
+        .heading h2 {
+            font-size: 2rem;
+            color: rgb(2, 1, 1);
+            position: absolute;
+            top: 11rem;
+            right: 12rem;
+            margin: 2rem;
+            text-transform: capitalize;
+            font-family: 'Roboto Mono', monospace;
+            word-spacing: 1rem;
+        }
+
+        .card {
+            height: 50%;
+            width: 45%;
+            top: 15rem;
+            display: flex;
+            right: 35rem;
+            position: absolute;
+            text-align: center;
+            background-color: hsl(255, 50%, 100%);
+            border-radius: 3rem 3rem 0 0;
+            box-shadow: 0px 0px 13px 4px rgb(246 246 246);
+        }
+
+        .card::before {
+            content: "";
+            width: 61.2rem;
+            height: 3rem;
+            font-size: 3.8rem;
+            position: absolute;
+            top: -1rem;
+            left: 0.2rem;
+            border-top: 2rem solid #68fd72;
+            padding-top: 1rem;
+            border-radius: 5rem;
+        }
+
+        .btn {
+            width: auto;
+            background-color: rgb(89, 105, 246);
+            color: #fff;
+            cursor: pointer;
+            margin: 0.5rem;
+            padding: 1rem;
+            border-radius: 1rem;
+            margin-top: 2rem;
+            position: absolute;
+            bottom: 2rem;
+            right: 4rem;
+            text-transform: capitalize;
+            font-size: 2rem;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+
+            text-decoration: underline;
+            color: rgb(89, 78, 243);
+            background-color: silver;
+        }
+    </style>
+</head>
+
+<body>
+    {{>navbar}}
+    <div class="background">
+        <div class="card">
+            <div class="heading">
+                <h1>thanks for log in </h1>
+                <h2>now you can cheack your profile </h2>
+
+                <a href="http://localhost:3000/profile" class="btn">cheack profile</a>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

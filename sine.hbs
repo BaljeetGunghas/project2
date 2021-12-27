@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sine in of Awesome it</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Padauk&family=Vujahday+Script&display=swap');
+
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+
+
+
+        .background {
+            width: 100vw;
+            height: 100vh;
+            background: hsl(180, 74%, 93%);
+            /* isplay: grid;d */
+            /* background-color: hsl(180°, 92%, 53%); */
+        }
+
+        .background-card {
+            height: 92vh;
+            width: 100vw;
+            box-sizing: border-box;
+            display: grid;
+            place-items: center;
+            {{!-- background: url("https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"); --}}
+            opacity: 0.9;
+            object-fit: cover;
+            object-position: center;
+        }
+        .background-card img{
+            height: 92vh;
+            width: 100vw;
+        }
+
+        .background-card::before {
+            content: "welcome you are awesome..";
+            width: auto;
+            height: auto;
+            font-size: 379.8%;
+            position: absolute;
+            top: 52.8%;
+            left: 17%;
+            text-transform: capitalize;
+            font-family: fantasy;
+            /* font-family: 'Vujahday Script', cursive; */
+            font-weight: 500;
+
+        }
+
+        .background-card::after {
+            content: "Fill the dittals";
+            width: auto;
+            height: auto;
+            font-size: 2.8rem;
+            position: absolute;
+            top: 62%;
+            left: 41%;
+            text-transform: capitalize;
+            font-family: 'Vujahday Script', cursive;
+            font-weight: 500;
+
+        }
+
+        .card {
+            height: 30rem;
+            width: 45rem;
+            top: 10rem;
+            right: 7rem;
+            position: absolute;
+            text-align: center;
+            background-color: hsl(255, 50%, 100%);
+            border-radius: 3rem 3rem 0 0;
+            box-shadow: 6px 7px 26px -6px rgb(0, 0, 0);
+        }
+
+        .card h2 {
+            text-transform: uppercase;
+            color: #0300c9bd;
+            border-top: 2rem solid #ff7272;;
+            border-radius: 5rem;
+            font-size: 2.2rem;
+            font-weight: 800;
+            font-family: cursive;
+            padding-top: 1rem;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-left: 7rem;
+        }
+
+        .form-data {
+            display: flex;
+            margin-top: 5rem;
+        }
+
+        .form-data a {
+            margin-top: 2rem;
+            text-decoration: none;
+            font-size: 1.5rem;
+            position: absolute;
+            left: 19rem;
+            bottom: 1.5rem;
+            font-family: ui-rounded;
+        }
+
+        .form-data a:hover {
+            color: #f6020e;
+            font-size: 1.49rem;
+            text-decoration: underline;
+        }
+
+        .login-img img {
+            width: 14rem;
+            height: 14rem;
+            margin-left: 3rem;
+            border-radius: 3rem;
+        }
+
+        input {
+            margin: 0.5rem;
+            padding: 0.5rem;
+            border: 0.1rem solid rgb(0, 0, 0);
+            background-color: rgb(239, 239, 239);
+            border-radius: 1rem;
+            outline: none;
+        }
+
+        .btn {
+            width: 10rem;
+            background-color: rgb(64, 83, 248);
+            color: #fff;
+            cursor: pointer;
+            margin: 0.5rem;
+            padding: 0.5rem;
+            border-radius: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background">
+        {{>navbar}}
+        <div class="background-card">
+            <img src="https://images.unsplash.com/photo-1498049860654-af1a5c566876?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="" srcset="">
+            <div class="card">
+                <h2>log in</h2>
+                <div class="form-data">
+                    <div class="login-img">
+                        <img src="https://png.pngtree.com/png-vector/20191003/ourmid/pngtree-user-login-or-authenticate-icon-on-gray-background-flat-icon-ve-png-image_1786166.jpg"
+                            alt="log in">
+                    </div>
+                    <form action="/login" method="post">
+                        <input type="email" name="email" id="email-id" placeholder="Enter Email">
+                        <input type="password" name="password" id="password-id" placeholder="Enter Password">
+                        <button type="submit" class="btn">Log In</button>
+                        <a href="http://" target="" rel="noopener noreferrer">Forget Password</a>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

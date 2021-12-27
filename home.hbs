@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepageof Awesome it</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap');
+
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        html {
+            font-size: 62.5%;
+            overflow: hidden;
+        }
+
+        .navbar {
+            width: 100vw;
+            height: 5rem;
+            background-color: rgb(167 87 105);
+            display: flex;
+            overflow: hidden;
+        }
+
+        div.logo {
+            padding: 1rem;
+            position: relative;
+        }
+
+        img {
+            height: 4rem;
+            width: 4rem;
+        }
+
+        .navbar ul {
+            overflow: auto;
+            margin-left: 40rem;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 1rem;
+        }
+
+        .navbar li a {
+            font-size: 2rem;
+            text-decoration: none;
+            color: #fff;
+            text-transform: capitalize;
+            padding: 1rem;
+        }
+
+        .navbar li a:hover {
+            color: rgba(0, 0, 255, 0.623);
+            background-color: rgba(235, 234, 231, 0.876);
+            border-radius: 1rem;
+            padding-top: .3rem;
+        }
+
+
+
+
+
+        div .bg {
+            width: 100vw;
+            height: 50vh;
+            position: relative;
+
+        }
+
+        .bg img {
+            width: 100vw;
+            height: 50vh;
+            object-fit: cover;
+            opacity: 0.9;
+        }
+
+        /* img::before{
+            content: "Wellcome to it world";
+            width: 40vw;
+            height: auto;
+            
+        } */
+        .heading {
+            width: 40%;
+            height: 10rem;
+            color: #fff;
+            position: absolute;
+            top: 28%;
+            left: 3%;
+            text-align: center;
+        }
+
+        .heading h1 {
+            font-size: 3rem;
+            font-family: 'Padauk', sans-serif;
+            /* font-family: 'Vujahday Script', cursive; */
+            text-transform: capitalize;
+            height: 5rem;
+        }
+
+        .heading h3 {
+            font-size: 2rem;
+            font-family: 'Padauk', sans-serif;
+            text-align: right;
+            /* font-family: 'Vujahday Script', cursive; */
+        }
+
+
+
+        .pera {
+            width: 100vw;
+            height: 30vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 11rem;
+        }
+
+        .center-headinng h1 {
+            text-align: center;
+            text-transform: uppercase;
+            background-color: #e2e7eb;
+            padding: 2rem;
+            margin: 2rem;
+            border: 0.2rem solid rgb(185, 122, 122);
+            border-radius: 2rem;
+            width: 21%;
+            position: absolute;
+            left: 39%;
+            transform: translateX(-50px);
+        }
+
+        .card {
+            background-color: rgb(253 253 253);
+            padding: 1rem;
+            margin: 2rem;
+            /* border: 0.1rem solid black; */
+            border-radius: 1rem;
+            height: 57%;
+            width: 20%;
+            box-shadow: 3px 6px 10px -2px black;
+        }
+
+        .card h2 {
+            text-transform: capitalize;
+            font-size: 2rem;
+            text-align: left;
+        }
+
+        .card p {
+            text-transform: capitalize;
+            font-size: 1rem;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 2rem;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    {{!-- <div class="navbar">
+        <div class="logo">
+            <div class="img">
+                <img src="/projet1/src/img/logo1.jpg" alt="logo" srcset="logo">
+            </div>
+        </div>
+        <div class="links">
+            <ul>
+                <li><a href="/">home</a></li>
+                <li><a href="/reagistor">register</a></li>
+                <li><a href="/sine">sine in</a></li>
+            </ul>
+        </div>
+    </div> --}}
+
+    {{>navbar}}
+    <div class="bg">
+       <img src="https://images.unsplash.com/photo-1578319080515-85e6f9f9427d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="home" srcset="">
+    </div>
+    <div class="heading">
+        <h1>Wellcome to it world</h1>
+        <h3>This is the feautre</h3>
+    </div>
+    <div class="center-headinng">
+        <h1>also read This</h1>
+    </div>
+    <div class="pera">
+
+        <div class="card">
+            <h2>our client</h2>
+            <p>there is a great work on the top of the coampany on the behafe of the good knowlage of the student.</p>
+        </div>
+        <div class="card">
+            <h2>our vision</h2>
+            <p>there is a great work on the top of the coampany on the behafe of the good knowlage of the student.</p>
+        </div>
+        <div class="card">
+            <h2>our work</h2>
+            <p>there is a great work on the top of the coampany on the behafe of the good knowlage of the student.</p>
+        </div>
+    </div>
+</body>
+
+</html>

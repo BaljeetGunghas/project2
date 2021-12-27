@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registeration of Awesome it</title>
+    {{!--
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    --}}
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+
+
+        }
+
+        html {
+            font-size: 62.5%;
+            overflow: hidden;
+        }
+
+        .back img {
+            height: 90vh;
+            width: 100vw;
+            padding: 0%;
+            margin: 0%;
+            object-fit: cover;
+            object-position: top;
+            scroll-behavior: smooth;
+        }
+
+        form {
+            height: 48%;
+            width: 50%;
+            background-color: #e5e4e2;
+            position: absolute;
+            top: 20%;
+            left: 10%;
+            text-align: left;
+            /* align-items: center; */
+            padding: 2rem;
+            border-radius: 5rem;
+            border-radius: 5rem 30rem 5rem 5rem;
+        }
+
+        form h1 {
+            text-align: center;
+            /* border: 0.1rem solid black; */
+            position: relative;
+            width: 40rem;
+            align-items: center;
+            margin: 2rem;
+        }
+
+        form::before {
+            content: "";
+            height: 10rem;
+            width: 102rem;
+            background-color: rgb(40, 49, 51);
+            border: 0.2rem solid black;
+            position: absolute;
+            transform: matrix3d(1, 0, 0, 0, -1, 1, 2, 0, 5, 8, 22, 23, 15, 1, 3, 1);
+            top: 100%;
+            left: -28%;
+
+        }
+
+        form::after {
+            content: "";
+            height: 2rem;
+            width: 16rem;
+            background-color: rgb(242, 247, 248);
+            border: 0.2rem solid black;
+            position: absolute;
+            transform: matrix3d(1, 0, 0, 0, -1, 1, 2, 0, 5, 8, 22, 23, 15, 1, 3, 1);
+            top: 110%;
+            right: -48%;
+            animation: road 0.3s linear infinite;
+
+        }
+
+        @keyframes road {
+
+            0% {
+                transform: translateX(-30rem);
+            }
+
+            25% {
+                transform: translateX(-40rem);
+            }
+
+            50% {
+                transform: translateX(-60rem);
+            }
+
+            75% {
+                transform: translateX(-80rem);
+            }
+
+            100% {
+                transform: translateX(-130rem);
+            }
+
+        }
+
+        .circle1 {
+            height: 10rem;
+            width: 10rem;
+            background-color: rgb(195, 148, 148);
+            border: 0.2rem solid black;
+            border-radius: 50%;
+            position: absolute;
+            top: 69%;
+            left: 15%;
+            overflow: hidden;
+        }
+
+
+        .circle1::before {
+            content: "";
+            height: 10rem;
+            width: 0rem;
+            background-color: rgb(24, 124, 155);
+            border: 0.2rem solid black;
+            border-radius: 19%;
+            position: absolute;
+            transform: rotate(90deg);
+            top: -2%;
+            left: 46%;
+            animation: rot1 0.3s linear infinite;
+        }
+
+        .circle1::after {
+            content: "";
+            height: 10rem;
+            width: 0rem;
+            background-color: rgb(24, 124, 155);
+            border: 0.2rem solid black;
+            border-radius: 19%;
+            position: absolute;
+            transform: rotate(0deg);
+            top: -2%;
+            left: 46%;
+            animation: rot1 0.3s linear infinite;
+        }
+
+        @keyframes rot1 {
+
+            0% {
+                transform: rotate(0deg);
+            }
+
+            25% {
+                transform: rotate(90deg);
+            }
+
+            50% {
+                transform: rotate(180deg);
+            }
+
+            75% {
+                transform: rotate(270deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+
+        }
+
+
+        .circle2 {
+            height: 10rem;
+            width: 10rem;
+            background-color: rgb(195, 148, 148);
+            border: 0.2rem solid black;
+            border-radius: 50%;
+            position: absolute;
+            top: 69%;
+            right: 45%;
+            overflow: hidden;
+        }
+
+        .circle2::before {
+            content: "";
+            height: 10rem;
+            width: 0rem;
+            background-color: rgb(24, 124, 155);
+            border: 0.2rem solid black;
+            border-radius: 19%;
+            position: absolute;
+            transform: rotate(90deg);
+            top: -2%;
+            left: 46%;
+            animation: rot1 0.3s linear infinite;
+        }
+
+        .circle2::after {
+            content: "";
+            height: 10rem;
+            width: 0rem;
+            background-color: rgb(24, 124, 155);
+            border: 0.2rem solid black;
+            border-radius: 19%;
+            position: absolute;
+            transform: rotate(90deg);
+            top: -2%;
+            left: 46%;
+            animation: rot1 0.3s linear infinite;
+        }
+
+        .form-group {
+            display: flex;
+            position: relative;
+        }
+
+        .form-control {
+            width: 47%;
+            padding: .5rem;
+            margin: .5rem;
+            border: 0.1rem dotted blue;
+            border-radius: 1rem;
+            display: flex;
+            flex-direction: column;
+            outline: none;
+
+        }
+
+        label {
+
+            padding-right: 1rem;
+            color: red;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        .btn {
+            display: block;
+            left: 19%;
+            position: absolute;
+            width: 10rem;
+            background: rgb(77, 77, 255);
+            color: white;
+            padding: 0.4rem;
+            margin: 0.4rem;
+            border-radius: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    {{>navbar}}
+
+    <div class="back">
+        <img src="https://images.unsplash.com/photo-1518655048521-f130df041f66?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+            alt="cont">
+    </div>
+    <form method="post" action="/reagistor">
+        <h1>Fill your registeration Form</h1>
+        <div class="form-group col-md-6">
+            <label for="inputAddress">Name : </label>
+            <input type="text" class="form-control" name="full_name" id="inputAddress" placeholder="Enter your name">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="inputEmail4">Email : </label>
+            <input type="email" class="form-control" id="inputEmail4" name="email" placeholder="Enter your Email">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="inputPassword4">Password : </label>
+            <input type="password" class="form-control" id="inputPassword4" name="password" placeholder="Password">
+        </div>
+
+        <div class="form-group col-md-6">
+            <label for="inputCity">Mobile No: </label>
+            <input type="text" class="form-control" id="inputCity2" name="number" placeholder="Enter your mobile no.">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="inputState">Gender :</label>
+            <select id="inputState" class="form-control" name="gender">
+                <option selected>Choose...</option>
+                <option name="gender">Male</option>
+                <option name="gender">Femail</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Register</button>
+    </form>
+    <div class="vickel">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+    </div>
+</body>
+
+</html>
